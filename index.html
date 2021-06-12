@@ -11,15 +11,27 @@
 </head>
 <body>
   <div class='jumbotron'>
-    <h1>Mr. Roboger's Neighborhood</h1>
-    <p>Please enter a number. Mr. Roboger will replace any number with his favorite response as your number is counted up to. </p>
-    <form id='numberInput'>
-      <label for="numInput">Enter a number!</label>
-      <input id='numInput' type="number">
-      <label for="nameInput">Enter your name!</label>
-      <input id='nameInput' type="text">
-      <button class='btn btn-dark' type='submit'>Go!</button>
-    </form>
+    <div class='row'>
+      <div class='col-sm-6'>
+        <div class='intro'>
+          <h1>Mr. Roboger's Neighborhood</h1>
+          <p>Please enter a number. Mr. Roboger will replace any number with his favorite response as your number is counted up to. </p>
+        </div>
+
+      </div>
+      <div class='col-sm-6'>
+        <div class='roboInput'>
+          <form id='numberInput'>
+            <label for="numInput">Enter a number!</label>
+            <input id='numInput' type="number">
+            <label for="nameInput">Enter your name!</label>
+            <input id='nameInput' type="text">
+            <button class='btn btn-dark' type='submit'>Go!</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
   </div>
   <div class='container'>
     <div class='row'>

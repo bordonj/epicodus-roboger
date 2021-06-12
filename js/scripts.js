@@ -40,7 +40,11 @@ $(document).ready(function() {
     }
     for (element of result) {
       if (element === "Won't you be my neighbor?") {
-        $('#roboSays').prepend(`<li>Won't you be my neighbor, <span class='name'>${userName}?</span></li>`)
+        if (userName) {
+          $('#roboSays').prepend(`<li>Won't you be my neighbor, <span class='name'>${userName}?</span></li>`)
+        } else {
+          $('#roboSays').prepend(`<li>Won't you be my neighbor?`)
+        }
       } else if (element === 'Boop!') {
         $('#roboSays').append(`<li>${element}</li>`)
       } else if (element === 'Beep!') {

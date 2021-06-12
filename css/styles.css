@@ -48,6 +48,13 @@ button {
   margin-top: 10px;
   margin-bottom: -40px;
 }
+.roboInput, .intro {
+  width: 80%;
+  margin: auto;
+}
+.roboInput {
+  margin-left: 20%;
+}
 /* text style */
 li {
   list-style: none;
@@ -69,6 +76,9 @@ h1 {
 .row h1 {
   color: white;
 }
-.jumbotron p {
+/* .jumbotron p {
   width: 50%;
+} */
+.jumbotron h1 {
+  color: black;
 }

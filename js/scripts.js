@@ -25,8 +25,8 @@ $(document).ready(function() {
     $('.noInput').html(clr);
     const userInput = parseInt($('input#numInput').val());
     const userName = $('input#nameInput').val();
-
     let result = beepBoop(userInput);
+    
     if (!Number(userInput)) {
       $('#robo, #user').hide();
       $('.noInput').show();

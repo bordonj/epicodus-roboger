@@ -21,19 +21,32 @@ $(document).ready(function() {
   $('form#numberInput').submit(function(e) {
     e.preventDefault();
     const clr = '';
-    $('#robo, #user').text(clr);
+    $('#roboSays, #userSays').text(clr);
+    $('.noInput').html(clr);
     const userInput = parseInt($('input#numInput').val());
+    const userName = $('input#nameInput').val();
 
     let result = roboger(userInput);
+    if (!Number(userInput)) {
+      $('#robo, #user').hide();
+      $('.noInput').show();
+      if (!userName) {
+        $('.noInput').html(`<h1>You should enter a number and a name!</h1>`)
+      } else {
+        $('.noInput').html(`<h1>You should enter a number, ${userName}!</h1>`)
+      }
+    } else {
+      $('#robo, #user').show();
+    }
     for (element of result) {
       if (element === "Won't you be my neighbor?") {
-        $('#robo').append(`<li>${element}</li>`)
+        $('#roboSays').prepend(`<li>Won't you be my neighbor, <span class='name'>${userName}?</span></li>`)
       } else if (element === 'Boop!') {
-        $('#robo').append(`<li>${element}</li>`)
+        $('#roboSays').append(`<li>${element}</li>`)
       } else if (element === 'Beep!') {
-        $('#robo').append(`<li>${element}</li>`)
+        $('#roboSays').append(`<li>${element}</li>`)
       } else {
-        $('#user').append(`<li>${element}</li>`)
+        $('#userSays').append(`<li>${element}</li>`)
       }
     }
     $('.container').show();

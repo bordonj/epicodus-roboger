@@ -1,5 +1,5 @@
 // business logic
-let roboger = (numInput) => {
+let beepBoop = (numInput) => {
   let robogerArr = [];
   for (let i = 0; i <= numInput; i++) {
     i = i.toString();
@@ -26,7 +26,7 @@ $(document).ready(function() {
     const userInput = parseInt($('input#numInput').val());
     const userName = $('input#nameInput').val();
 
-    let result = roboger(userInput);
+    let result = beepBoop(userInput);
     if (!Number(userInput)) {
       $('#robo, #user').hide();
       $('.noInput').show();

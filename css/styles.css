@@ -11,6 +11,8 @@ body {
 }
 .jumbotron {
   background-color: rgba(255, 255, 255, 0.755);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
 }
 .row {
   margin: 10px 0;
@@ -76,9 +78,9 @@ h1 {
 .row h1 {
   color: white;
 }
-/* .jumbotron p {
-  width: 50%;
-} */
+.jumbotron p {
+  font-family: Roboto;
+}
 .jumbotron h1 {
   color: black;
 }

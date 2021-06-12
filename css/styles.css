@@ -69,4 +69,6 @@ h1 {
 .row h1 {
   color: white;
 }
-/* media */
+.jumbotron p {
+  width: 50%;
+}

@@ -26,7 +26,7 @@ $(document).ready(function() {
     const userInput = parseInt($('input#numInput').val());
     const userName = $('input#nameInput').val();
     let result = beepBoop(userInput);
-    
+
     if (!Number(userInput)) {
       $('#robo, #user').hide();
       $('.noInput').show();
@@ -43,7 +43,7 @@ $(document).ready(function() {
         if (userName) {
           $('#roboSays').prepend(`<li>Won't you be my neighbor, <span class='name'>${userName}?</span></li>`)
         } else {
-          $('#roboSays').prepend(`<li>Won't you be my neighbor?`)
+          $('#roboSays').prepend(`<li>${element}</li>`)
         }
       } else if (element === 'Boop!') {
         $('#roboSays').append(`<li>${element}</li>`)

@@ -53,6 +53,6 @@ $(document).ready(function() {
         $('#userSays').append(`<li>${element}</li>`)
       }
     }
-    $('.container').show();
+    $('.container').fadeIn();
   })
 })

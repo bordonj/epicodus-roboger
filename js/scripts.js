@@ -1,8 +1,7 @@
+// business logic
 let roboger = (numInput) => {
-  let num = parseFloat(numInput);
   let robogerArr = [];
-  // let numArr = [];
-  for (let i = 0; i <= num; i++) {
+  for (let i = 0; i <= numInput; i++) {
     i = i.toString();
     if (i.includes(3)) {
       robogerArr.push("Won't you be my neighbor?");
@@ -14,5 +13,29 @@ let roboger = (numInput) => {
       robogerArr.push(i);
     }
   }
-  console.log('robogerArr', robogerArr);
+  return robogerArr;
 }
+
+// UI logic
+$(document).ready(function() {
+  $('form#numberInput').submit(function(e) {
+    e.preventDefault();
+    const clr = '';
+    $('#robo, #user').text(clr);
+    const userInput = parseInt($('input#numInput').val());
+
+    let result = roboger(userInput);
+    for (element of result) {
+      if (element === "Won't you be my neighbor?") {
+        $('#robo').append(`<li>${element}</li>`)
+      } else if (element === 'Boop!') {
+        $('#robo').append(`<li>${element}</li>`)
+      } else if (element === 'Beep!') {
+        $('#robo').append(`<li>${element}</li>`)
+      } else {
+        $('#user').append(`<li>${element}</li>`)
+      }
+    }
+    $('.container').show();
+  })
+})

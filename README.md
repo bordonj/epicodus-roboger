@@ -36,30 +36,26 @@ Describe: beepBoop()
 Test: "It should return an array with a 0 if the number 0 is inputted"
 Code: beepBoop(0);
 Expected Output: '0'
-```
-```
-Describe: beepBoop()
+
 Test: "It should return an array replacing the element that contains a 1 with a 'Beep!'"
 Code: beepBoop(1);
 Expected Output: 0, Beep! 
-```
-```
-Describe: beepBoop()
+
 Test: "It should return an array replacing the element that contains 2 with a 'Boop!'"
 Code: beepBoop(2);
 Expected Output: 0, Beep, Boop!
-```
-```
-Describe: beepBoop()
+
 Test: "It should return an array replacing the element that contains 3 with a 'Won't you be my neighbor?'"
 Code: beepBoop(3);
-Expected Output: 0 Beep! Boop! Won't you be my neighbor?
-```
-```
-Describe: beepBoop()
+Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?
+
 Test: "It should return a list of values that counts up to the number the user inputted, replacing each of the aforementioned numbers"
 Code: beepBoop(5);
-Expected Output: 0 Beep! Boop! Won't you be my neighbor? 4, 5
+Expected Output: 0, Beep!, Boop!, Won't you be my neighbor? 4, 5
+
+Test: "It should return a list of values that counts up to the number the user inputted (for even larger numbers), replacing each of the aforementioned numbers"
+Code: beepBoop(500);
+Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5 (...respective number replacements)... 500
 ```
 
 ## Github Pages link

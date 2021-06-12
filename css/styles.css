@@ -29,6 +29,8 @@ body {
   background-color: rgba(0, 0, 0, 0.672);
   margin: 10px 20%;
   color: white;
+  width: 30%;
+  min-width: 120px;
   padding-left: 10px;
   padding-bottom: 30px;
   border-radius: 10px;
@@ -62,7 +64,7 @@ li {
   list-style: none;
 }
 #user li {
-  font-size: 300%;
+  font-size: 190%;
 }
 #robo li {
   font-size: 160%;

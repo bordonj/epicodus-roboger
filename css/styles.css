@@ -1,0 +1,45 @@
+/* layout */
+.container {
+  display: none;
+}
+body {
+  background-image: url('../img/robo.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+.jumbotron {
+  background-color: rgba(255, 255, 255, 0.755);
+}
+.row {
+  margin: 10px 0;
+}
+/* .col-sm-6 {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.371);
+  margin: 0 10px;
+} */
+#robo {
+  background-color: rgba(0, 0, 0, 0.672);
+  margin: 10px;
+  color: white;
+  padding-left: 10px;
+}
+#user {
+  background-color: rgba(0, 0, 0, 0.672);
+  margin: 10px 20%;
+  color: white;
+  padding-left: 10px;
+}
+/* text style */
+li {
+  list-style: none;
+}
+#user li {
+  font-size: 300%;
+}
+#robo li {
+  font-size: 200%;
+}
+/* media */
